@@ -241,7 +241,7 @@ figure img{
  flex-direction:column;
 }
 .overlay{
-  display:block;
+  display:none;
   width:80%;
   margin:0 auto;
   position:absolute;
