@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Barlow Condensed -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,700&display=swap" rel="stylesheet"> 
+    <!-- Barlow -->
+   <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet"> 
+  <!-- Google Fonts Rendered -->
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Frontend Mentor | Project tracking intro component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      footer {
+        margin-top: 15px;
+      }
+      .attribution {
+        font-size: 12px;
+        text-align: center;
+        font-weight:700;
+      }
+      .attribution a {
+        color: hsl(0, 100%, 68%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+     <nav>
+          <div class="logo">
+            <a aria-label="Logo" href="#">
+              <img src="./images/logo.svg" alt="Brand Logo" />
+            </a>
+        </div>
+        <ul>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><span class="circle"></span></li>
+          <li><a class="login" href="#">Login</a></li>
+        </ul>
+        <!-- Hamburger -->
+        <div class="hamburger-container" onclick="hamburger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </div>
+      <!-- Hamburger Closes  -->
+    </nav>
+     <!-- Main Container -->
+       <main>
+          <div class="container">
+             <!-- Overlay -->
+            <div id="myNav" class="overlay">
+              <div class="overlay-content" onclick="hamburger(this)">
+               <a href="#">Product</a>
+               <a href="#">Features</a>
+               <a href="#">Pricing</a>
+               <hr size="2">
+               <a class="active" href="#">Login</a>
+             </div>
+            </div>
+            <!-- Overlay Closes  -->
+          <!-- Content -->
+          <div class="content">
+            <span class="new">New</span>
+            <span class="lighttext">
+              Monograph Dashboard
+            </span>
+            <h1>Powerful insights into your team</h1>
+            <p>Project planning and time tracking <br>for agile teams</p>
+            <div class="button_preview">
+            <a href="#" class="button_demo">
+              Schedule a demo
+            </a>
+            <span class="preview">
+              to see a live preview
+            </span>
+            </div>
+          </div>
+          <!-- Illustrattion Devices Image -->
+          <figure>
+          <img src="/images/illustration-devices.svg" alt="Illustration Devices Image">
+          </figure>
+        </div>
+       </main>
+       <script src="/js/main.js"></script>
+      </body>
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.linkedin.com/in/saurav-chamoli/" target="_blank"
+        >Saurav Chamoli</a
+      >.
+    </p>
+  </footer>
+</html>
